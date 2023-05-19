@@ -1,8 +1,7 @@
 function App() {
-
   return (
-    <main>Hello world</main>
-  )
+    <main className="h-full w-full bg-base-100 text-white">Hello world</main>
+  );
 }
 
-export default App
+export default App;

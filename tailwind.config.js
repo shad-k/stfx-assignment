@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import colors from "tailwindcss/colors";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -14,10 +15,13 @@ export default {
     extend: {
       colors: {
         "primary-green": "#00CC6A",
-        "accent-yellow": "FFC700",
+        "accent-yellow": "#FFC700",
         field: "#1B1F28",
         section: "#10131B",
-        "base-100": "#1e1e1e",
+        "base-100": "#0B0C13",
+      },
+      fontFamily: {
+        sans: ["Lexend", ...defaultTheme.fontFamily.sans],
       },
     },
   },

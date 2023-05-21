@@ -2,7 +2,7 @@ import React from "react";
 import { NumberFormatter } from "../utils";
 
 function InvestForm() {
-  const [amount, setAmount] = React.useState<number>();
+  const [amount, setAmount] = React.useState<number>(0);
   const userBalance = 16340;
 
   return (

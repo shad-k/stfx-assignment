@@ -43,7 +43,7 @@ function LimitOrderForm() {
             id="price"
             placeholder="0"
             required
-            value={1299}
+            defaultValue={1299}
             className="bg-transparent text-xl font-medium w-3/4 mr-1"
           />
           <span className="bg-transparent text-sm font-medium text-white">
@@ -53,18 +53,20 @@ function LimitOrderForm() {
       </div>
 
       <table className="w-full mt-3 text-white/50 text-xs h-[60px]">
-        <tr>
-          <td>Leverage</td>
-          <td className="text-right text-white font-semibold">10.00x</td>
-        </tr>
-        <tr>
-          <td>Liq. Price</td>
-          <td className="text-right text-white font-semibold">$1048.24</td>
-        </tr>
-        <tr>
-          <td>Current Price</td>
-          <td className="text-right text-white font-semibold">$1245.64</td>
-        </tr>
+        <tbody>
+          <tr>
+            <td>Leverage</td>
+            <td className="text-right text-white font-semibold">10.00x</td>
+          </tr>
+          <tr>
+            <td>Liq. Price</td>
+            <td className="text-right text-white font-semibold">$1048.24</td>
+          </tr>
+          <tr>
+            <td>Current Price</td>
+            <td className="text-right text-white font-semibold">$1245.64</td>
+          </tr>
+        </tbody>
       </table>
 
       <button

@@ -1,14 +1,23 @@
-import React from "react";
-
 import VaultStatusStepper from "./VaultStatusStepper";
-import { VaultStatus } from "../types";
+import Investments from "./Investments";
+import useVaultByAddress from "../hooks/useVaultByAddress";
 
 function Invest() {
-  const [vaultStatus, setVaultStatus] = React.useState(VaultStatus.Raising);
+  const vault = useVaultByAddress("0x81900b4cd1a985738c3f4dcde2a5f1dac2ae858c");
+
+  if (!vault) {
+    return null;
+  }
 
   return (
     <div className="flex flex-col gap-[10px] max-w-xs w-full">
-      <VaultStatusStepper vaultStatus={vaultStatus} />
+      <VaultStatusStepper vaultStatus={vault.status} />
+      <Investments
+        investors={vault.investors}
+        raised={vault.raised}
+        target={vault.target}
+        vaultAddress={vault.address}
+      />
     </div>
   );
 }

@@ -19,7 +19,7 @@ function VaultStatusStepper({ vaultStatus }: Props) {
       <li className="flex items-center justify-between after:content-[''] after:w-[38px] after:h-[2px] after:border-b after:border-accent-yellow after:border-2 after:rounded-xl after:inline-block after:mx-4">
         <div className="flex flex-col items-center justify-center gap-1">
           <RaisingIcon fill="#FFC700" opacity={1} />
-          <span className="text-white">Raising</span>
+          <span className="text-white font-medium">Raising</span>
         </div>
       </li>
 
@@ -34,7 +34,11 @@ function VaultStatusStepper({ vaultStatus }: Props) {
             fill={isLiveActive ? "#FFC700" : "#FFFFFF"}
             opacity={isLiveActive ? 1 : 0.3}
           />
-          <span className={isLiveActive ? "text-white" : "text-white/30"}>
+          <span
+            className={`font-medium ${
+              isLiveActive ? "text-white" : "text-white/30"
+            }`}
+          >
             Live
           </span>
         </div>
@@ -47,7 +51,11 @@ function VaultStatusStepper({ vaultStatus }: Props) {
             fill={isClosedActive ? "#FFC700" : "#FFFFFF"}
             opacity={isClosedActive ? 1 : 0.3}
           />
-          <span className={isClosedActive ? "text-white" : "text-white/30"}>
+          <span
+            className={`font-medium ${
+              isClosedActive ? "text-white" : "text-white/30"
+            }`}
+          >
             Closed
           </span>
         </div>

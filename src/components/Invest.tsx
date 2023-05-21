@@ -1,5 +1,6 @@
 import VaultStatusStepper from "./VaultStatusStepper";
 import Investments from "./Investments";
+import OrderForm from "./OrderForm";
 import useVaultByAddress from "../hooks/useVaultByAddress";
 
 function Invest() {
@@ -18,6 +19,7 @@ function Invest() {
         target={vault.target}
         vaultAddress={vault.address}
       />
+      <OrderForm />
     </div>
   );
 }

@@ -11,7 +11,7 @@ interface Props {
 
 function Investments({ investors, raised, target, vaultAddress }: Props) {
   return (
-    <div className="w-full rounded-xl bg-section font-sm capitalize flex flex-col items-center justify-between px-3 py-2">
+    <div className="w-full rounded-xl bg-section flex flex-col items-center justify-between px-3 py-2">
       <div className="flex items-center justify-between w-full">
         <span className="font-medium">Investors:</span>
         <InvestorsAvatarsList investors={investors} />

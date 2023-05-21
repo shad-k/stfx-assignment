@@ -1,7 +1,5 @@
-import React from "react";
-
-import { Investor } from "../types";
-import { PROFILE_URL_BASE } from "../constants";
+import { Investor } from "../../types";
+import { PROFILE_URL_BASE } from "../../constants";
 
 interface Props {
   investors: Investor[];

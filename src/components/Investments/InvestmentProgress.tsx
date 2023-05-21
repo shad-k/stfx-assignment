@@ -1,6 +1,5 @@
-import useUserInvestmentByVaultAddress from "../hooks/useUserInvestmentByVaultAddress";
-import { UserInvestment } from "../types";
-import { USDFormatter } from "../utils";
+import useUserInvestmentByVaultAddress from "../../hooks/useUserInvestmentByVaultAddress";
+import { USDFormatter } from "../../utils";
 
 interface Props {
   raised: number;

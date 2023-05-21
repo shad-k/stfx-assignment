@@ -1,4 +1,4 @@
-import { Investor } from "../types";
+import { Investor } from "../../types";
 import InvestmentProgress from "./InvestmentProgress";
 import InvestorsAvatarsList from "./InvestorsAvatarsList";
 

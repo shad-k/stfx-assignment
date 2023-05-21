@@ -11,7 +11,7 @@ function MarketOrderForm() {
           htmlFor="amount"
           className="flex items-center justify-between text-xs font-normal text-white/50"
         >
-          <span>Pay {NumberFormatter.format(amount ?? 0)} USD</span>
+          <span>Pay: {NumberFormatter.format(amount ?? 0)} USD</span>
           <span>Price 1,245.64</span>
         </label>
         <div className="flex items-center justify-between w-full mt-2">
@@ -34,7 +34,7 @@ function MarketOrderForm() {
       </div>
       <button
         type="submit"
-        className="mt-3 bg-primary-green/20 hover:bg-primary-green/30 border border-primary-green text-primary-green rounded-lg h-10 w-full font-extrabold text-sm"
+        className="mt-3 bg-primary-green/20 hover:bg-primary-green/30 border border-primary-green text-primary-green rounded-lg h-10 w-full font-extrabold text-sm tracking-wider"
       >
         Create Market Order
       </button>

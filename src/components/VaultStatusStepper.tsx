@@ -14,7 +14,7 @@ function VaultStatusStepper({ vaultStatus }: Props) {
   const isClosedActive = VaultStatus.Closed === vaultStatus;
 
   return (
-    <ol className="w-full rounded-xl bg-section font-sm capitalize flex items-center justify-between px-3 py-2">
+    <ol className="w-full rounded-xl bg-section text-sm capitalize flex items-center justify-between px-3 py-2">
       {/* Raising */}
       <li className="flex items-center justify-between after:content-[''] after:w-[38px] after:h-[2px] after:border-b after:border-accent-yellow after:border-2 after:rounded-xl after:inline-block after:mx-4">
         <div className="flex flex-col items-center justify-center gap-1">

@@ -8,7 +8,7 @@ function LimitOrderForm() {
     <form className="w-full mt-3" onSubmit={(e) => e.preventDefault()}>
       <div className="bg-field py-1.5 px-2 rounded flex flex-col w-full">
         <label htmlFor="amount" className="text-xs font-normal text-white/50">
-          Pay {NumberFormatter.format(amount ?? 0)} USD
+          Pay: {NumberFormatter.format(amount ?? 0)} USD
         </label>
         <div className="flex items-center justify-between w-full mt-2">
           <input
@@ -69,7 +69,7 @@ function LimitOrderForm() {
 
       <button
         type="submit"
-        className="mt-3 bg-primary-green/20 hover:bg-primary-green/30 border border-primary-green text-primary-green rounded-lg h-10 w-full font-extrabold text-sm"
+        className="mt-3 bg-primary-green/20 hover:bg-primary-green/30 border border-primary-green text-primary-green rounded-lg h-10 w-full font-extrabold text-sm tracking-wider"
       >
         Create Limit Order
       </button>

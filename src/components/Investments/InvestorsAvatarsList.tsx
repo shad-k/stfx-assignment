@@ -9,7 +9,7 @@ function InvestorsAvatarsList({ investors }: Props) {
   const investorsSubset = investors.slice(0, 5);
 
   return (
-    <div className="flex items-center -space-x-3 flex-1 ml-3">
+    <div className="flex items-center -space-x-2 flex-1 ml-3">
       {investorsSubset.map((investor) => {
         return (
           <a
@@ -19,7 +19,7 @@ function InvestorsAvatarsList({ investors }: Props) {
           >
             <img
               src={investor.avatar || "/defaultAvatar.png"}
-              className="w-10 h-10 rounded-full hover:border-2 border-white"
+              className="w-8 h-8 rounded-full hover:border-2 border-white"
             />
           </a>
         );
@@ -27,7 +27,7 @@ function InvestorsAvatarsList({ investors }: Props) {
       <button
         data-modal-target="investorsModal"
         data-modal-toggle="investorsModal"
-        className="flex items-center justify-center w-8 h-8 text-xs font-medium text-white bg-[#151922] border border-white/10 rounded-xl hover:bg-gray-600"
+        className="flex items-center justify-center w-7 h-6 text-xs font-medium text-white bg-[#151922] border border-white/10 rounded-lg hover:bg-gray-600"
         type="button"
         // onClick={() => setOpenInvestorsList(true)}
       >

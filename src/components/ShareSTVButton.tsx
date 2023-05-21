@@ -39,7 +39,7 @@ function ShareSTVButton({ vaultId }: Props) {
         data-modal-target="shareModal"
         data-modal-toggle="shareModal"
         type="button"
-        className="w-full rounded-xl bg-section hover:bg-white/10 flex items-center justify-center px-3 py-2 font-extrabold text-sm text-primary-green h-10 gap-1"
+        className="w-full rounded-xl bg-section hover:bg-white/10 flex items-center justify-center px-3 py-2 font-extrabold text-sm text-primary-green h-10 gap-1.5 tracking-wider"
       >
         <img src="/share.svg" />
         Share STV

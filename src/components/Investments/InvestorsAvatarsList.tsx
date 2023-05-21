@@ -19,7 +19,7 @@ function InvestorsAvatarsList({ investors }: Props) {
           >
             <img
               src={investor.avatar || "/defaultAvatar.png"}
-              className="w-10 h-10 rounded-full"
+              className="w-10 h-10 rounded-full hover:border-2 border-white"
             />
           </a>
         );

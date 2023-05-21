@@ -5,6 +5,7 @@ export default {
     {
       address: "0x81900b4cd1a985738c3f4dcde2a5f1dac2ae858c",
       status: VaultStatus.Raising,
+      vaultId: 18019,
       investors: [
         {
           address: "0x0022aa331686560dd555ee252f94ee6d7c293aec",

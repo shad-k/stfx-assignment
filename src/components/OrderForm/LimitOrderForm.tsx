@@ -1,5 +1,5 @@
 import React from "react";
-import { USDFormatter } from "../../utils";
+import { NumberFormatter } from "../../utils";
 
 function LimitOrderForm() {
   const [amount, setAmount] = React.useState<number>(0);
@@ -8,7 +8,7 @@ function LimitOrderForm() {
     <form className="w-full mt-3" onSubmit={(e) => e.preventDefault()}>
       <div className="bg-field py-1.5 px-2 rounded flex flex-col w-full">
         <label htmlFor="amount" className="text-xs font-normal text-white/50">
-          Pay {USDFormatter.format(amount ?? 0)}
+          Pay {NumberFormatter.format(amount ?? 0)} USD
         </label>
         <div className="flex items-center justify-between w-full mt-2">
           <input
@@ -31,7 +31,7 @@ function LimitOrderForm() {
 
       <div className="bg-field py-1.5 px-2 rounded flex flex-col w-full mt-3">
         <label
-          htmlFor="amount"
+          htmlFor="price"
           className="flex items-center justify-between text-xs font-normal text-white/50"
         >
           <span>Price</span>
@@ -40,7 +40,7 @@ function LimitOrderForm() {
         <div className="flex items-center justify-between w-full mt-2">
           <input
             type="number"
-            id="amount"
+            id="price"
             placeholder="0"
             required
             value={1299}

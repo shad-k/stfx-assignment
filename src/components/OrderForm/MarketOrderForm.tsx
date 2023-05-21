@@ -1,5 +1,5 @@
 import React from "react";
-import { USDFormatter } from "../../utils";
+import { NumberFormatter } from "../../utils";
 
 function MarketOrderForm() {
   const [amount, setAmount] = React.useState<number>(0);
@@ -11,7 +11,7 @@ function MarketOrderForm() {
           htmlFor="amount"
           className="flex items-center justify-between text-xs font-normal text-white/50"
         >
-          <span>Pay {USDFormatter.format(amount ?? 0)}</span>
+          <span>Pay {NumberFormatter.format(amount ?? 0)} USD</span>
           <span>Price 1,245.64</span>
         </label>
         <div className="flex items-center justify-between w-full mt-2">
